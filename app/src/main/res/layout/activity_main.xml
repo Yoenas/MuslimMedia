@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/gray_bg"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:viewBindingIgnore="true">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar"
@@ -31,7 +32,6 @@
             android:layout_height="wrap_content"
             android:elevation="0dp"
             app:tabIndicatorColor="@color/orange"
-
             app:tabSelectedTextColor="@color/black" />
     </com.google.android.material.appbar.AppBarLayout>
 

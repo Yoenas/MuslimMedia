@@ -31,24 +31,19 @@ class DetailActivity : AppCompatActivity() {
         }
 
         val news = intent.getParcelableExtra<News>(NEWS_DATA)
-        val photoHeadline = intent.getIntExtra(EXTRA_IMG_HEADLINE, 0)
-        val titleHeadline = intent.getStringExtra(EXTRA_TITLE_HEADLINE)
-        val contentHeadline = intent.getStringExtra(EXTRA_CONTENT_HEADLINE)
-        val dateHeadline = intent.getStringExtra(EXTRA_DATE_HEADLINE)
-        val authorHeadline = intent.getStringExtra(EXTRA_AUTHOR_HEADLINE)
 
         if (news != null) {
             binding.tvTitleDetail.text = news.title
             binding.tvDateDetail.text = news.date
             binding.tvAuthorDetail.text = news.author
             binding.tvContentDetail.text = news.content
-            binding.imgHeadline.setImageResource(news.photo)
+            binding.imgNewsDetail.setImageResource(news.photo)
         } else {
-            binding.imgHeadline.setImageResource(photoHeadline)
-            binding.tvTitleDetail.text = titleHeadline
-            binding.tvDateDetail.text = dateHeadline
-            binding.tvAuthorDetail.text = authorHeadline
-            binding.tvContentDetail.text = contentHeadline
+            binding.imgNewsDetail.setImageResource(intent.getIntExtra(EXTRA_IMG_HEADLINE, 0))
+            binding.tvTitleDetail.text = intent.getStringExtra(EXTRA_TITLE_HEADLINE)
+            binding.tvDateDetail.text = intent.getStringExtra(EXTRA_DATE_HEADLINE)
+            binding.tvAuthorDetail.text = intent.getStringExtra(EXTRA_AUTHOR_HEADLINE)
+            binding.tvContentDetail.text = intent.getStringExtra(EXTRA_CONTENT_HEADLINE)
         }
     }
 

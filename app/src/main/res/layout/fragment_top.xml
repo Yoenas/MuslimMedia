@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".fragments.AllNewsFragment">
+    tools:context=".fragments.TopNewsFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -17,12 +17,13 @@
             layout="@layout/news_headline" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_all_news"
+            android:id="@+id/rv_top_news"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:background="@color/white"
             android:paddingTop="16dp"
             android:paddingBottom="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@id/news_headline" />
-    </androidx.constraintlayout.widget.ConstraintLayout></androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

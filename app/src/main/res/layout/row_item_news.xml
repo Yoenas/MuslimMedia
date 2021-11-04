@@ -7,6 +7,8 @@
     android:layout_marginTop="4dp"
     android:layout_marginEnd="16dp"
     android:layout_marginBottom="4dp"
+    android:clickable="true"
+    android:focusable="true"
     app:cardBackgroundColor="@color/white"
     app:cardElevation="0dp">
 
@@ -20,15 +22,14 @@
             android:layout_height="120dp"
             app:cardBackgroundColor="@android:color/transparent"
             app:cardCornerRadius="20dp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
                 android:id="@+id/img_news"
-                android:layout_width="150dp"
-                android:layout_height="120dp"
-                android:contentDescription="@string/content_news"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/content_image_news"
                 android:scaleType="centerCrop"
                 android:src="@drawable/news_3" />
         </com.google.android.material.card.MaterialCardView>
@@ -38,7 +39,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_begin="182dp" />
+            app:layout_constraintGuide_begin="165dp" />
 
         <TextView
             android:id="@+id/tv_category"
@@ -91,5 +92,4 @@
             app:layout_constraintHorizontal_weight="2"
             app:layout_constraintStart_toEndOf="@id/tv_date" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </com.google.android.material.card.MaterialCardView>

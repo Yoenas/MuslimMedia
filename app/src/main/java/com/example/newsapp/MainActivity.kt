@@ -9,10 +9,10 @@ import com.google.android.material.tabs.TabLayoutMediator
 
 class MainActivity : AppCompatActivity() {
 
-    private var mSectionPagerAdapter: SectionPagerAdapter? = null
-
     private lateinit var vpNews: ViewPager2
     private lateinit var tabs: TabLayout
+
+    private var mSectionPagerAdapter: SectionPagerAdapter? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

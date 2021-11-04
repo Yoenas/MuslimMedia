@@ -3,16 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/SHAAARK/AndroidStudioProjects/NewsApp/app/src/main/res/layout/activity_detail.xml" value="0.1814814814814815" />
-        <entry key="..\:/Users/SHAAARK/AndroidStudioProjects/NewsApp/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/SHAAARK/AndroidStudioProjects/NewsApp/app/src/main/res/drawable/bg_splash.xml" value="0.21743589743589745" />
+        <entry key="..\:/Users/SHAAARK/AndroidStudioProjects/NewsApp/app/src/main/res/drawable/splash_screen.xml" value="0.21743589743589745" />
+        <entry key="..\:/Users/SHAAARK/AndroidStudioProjects/NewsApp/app/src/main/res/layout/activity_detail.xml" value="0.1" />
+        <entry key="..\:/Users/SHAAARK/AndroidStudioProjects/NewsApp/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/SHAAARK/AndroidStudioProjects/NewsApp/app/src/main/res/layout/activity_splash_screen.xml" value="0.1814814814814815" />
-        <entry key="..\:/Users/SHAAARK/AndroidStudioProjects/NewsApp/app/src/main/res/layout/fragment_all_news.xml" value="0.1814814814814815" />
+        <entry key="..\:/Users/SHAAARK/AndroidStudioProjects/NewsApp/app/src/main/res/layout/fragment_all_news.xml" value="0.2914691943127962" />
         <entry key="..\:/Users/SHAAARK/AndroidStudioProjects/NewsApp/app/src/main/res/layout/fragment_doppelganger.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/SHAAARK/AndroidStudioProjects/NewsApp/app/src/main/res/layout/fragment_news.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/SHAAARK/AndroidStudioProjects/NewsApp/app/src/main/res/layout/fragment_popular.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/SHAAARK/AndroidStudioProjects/NewsApp/app/src/main/res/layout/fragment_popular_news.xml" value="0.1814814814814815" />
+        <entry key="..\:/Users/SHAAARK/AndroidStudioProjects/NewsApp/app/src/main/res/layout/fragment_top.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/SHAAARK/AndroidStudioProjects/NewsApp/app/src/main/res/layout/fragment_top_news.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/SHAAARK/AndroidStudioProjects/NewsApp/app/src/main/res/layout/news_headline.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/SHAAARK/AndroidStudioProjects/NewsApp/app/src/main/res/layout/news_layout.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/SHAAARK/AndroidStudioProjects/NewsApp/app/src/main/res/layout/row_item_news.xml" value="0.1787037037037037" />
+        <entry key="..\:/Users/SHAAARK/AndroidStudioProjects/NewsApp/app/src/main/res/layout/row_item_news.xml" value="0.22" />
         <entry key="..\:/Users/SHAAARK/AndroidStudioProjects/NewsApp/app/src/main/res/layout/sdfkjskdfsdf.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/SHAAARK/AndroidStudioProjects/NewsApp/app/src/main/res/menu/menu_main.xml" value="0.20416666666666666" />
       </map>
