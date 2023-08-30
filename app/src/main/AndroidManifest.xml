@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.newsapp">
+    package="com.idn.muslimmedia">
 
     <application
         android:allowBackup="true"
@@ -11,12 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NewsApp"
         tools:ignore="AllowBackup">
-        <activity android:name=".MainActivity"
+        <activity android:name="com.idn.muslimmedia.MainActivity"
             android:theme="@style/Theme.NewsApp.NoActionBar"/>
-        <activity android:name=".DetailActivity"
+        <activity android:name="com.idn.muslimmedia.DetailActivity"
             android:theme="@style/Theme.NewsApp.NoActionBar"/>
         <activity
-            android:name=".SplashScreenActivity"
+            android:name="com.idn.muslimmedia.SplashScreenActivity"
             android:theme="@style/Theme.NewsApp.SplashTheme"
             android:exported="true">
             <intent-filter>
