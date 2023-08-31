@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.NewsApp" parent="Theme.MaterialComponents.Light.DarkActionBar">
+    <style name="Theme.MuslimMedia" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/white</item>
         <item name="colorPrimaryVariant">@color/white</item>
@@ -15,13 +15,7 @@
         <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
     </style>
 
-    <style name="Theme.NewsApp.SplashTheme">
-        <item name="windowNoTitle">true</item>
-        <item name="windowActionBar">false</item>
-        <item name="android:background">@drawable/bg_splash_screen</item>
-    </style>
-
-    <style name="Theme.NewsApp.NoActionBar">
+    <style name="Theme.MuslimMedia.NoActionBar">
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
     </style>

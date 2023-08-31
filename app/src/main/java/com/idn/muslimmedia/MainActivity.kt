@@ -2,6 +2,7 @@ package com.idn.muslimmedia
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.idn.muslimmedia.adapter.SectionPagerAdapter
 import com.idn.muslimmedia.databinding.ActivityMainBinding
 import com.google.android.material.tabs.TabLayoutMediator
@@ -12,6 +13,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        installSplashScreen()
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
