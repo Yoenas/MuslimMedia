@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.idn.muslimmedia">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_logo"
@@ -12,6 +14,17 @@
         android:theme="@style/Theme.MuslimMedia"
         tools:ignore="AllowBackup">
         <activity
+            android:name=".SearchableActivity"
+            android:theme="@style/Theme.MuslimMedia.NoActionBar"
+            android:launchMode="singleTop"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable"
+                android:resource="@xml/searchable"/>
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/Theme.SplashScreenBase">
@@ -20,9 +33,11 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <meta-data android:name="android.app.default_searchable"
+                android:value=".SearchableActivity" />
         </activity>
         <activity
-            android:name=".DetailActivity"
+            android:name=".ui.detail.DetailActivity"
             android:theme="@style/Theme.MuslimMedia.NoActionBar" />
     </application>
 

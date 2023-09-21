@@ -1,22 +1,16 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
-    <style name="Theme.MuslimMedia" parent="Theme.MaterialComponents.Light.DarkActionBar">
-        <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/white</item>
-        <item name="colorPrimaryVariant">@color/white</item>
-        <item name="colorOnPrimary">@color/black</item>
-        <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/black</item>
-        <item name="colorSecondaryVariant">@color/black</item>
-        <item name="colorOnSecondary">@color/black</item>
+    <style name="Theme.MuslimMedia" parent="Theme.Material3.DayNight">
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="m">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor">@color/white</item>
         <!-- Customize your theme here. -->
-        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorControlNormal">@color/black</item>
     </style>
 
     <style name="Theme.MuslimMedia.NoActionBar">
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
     </style>
+
 </resources>

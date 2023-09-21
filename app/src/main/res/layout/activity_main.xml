@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gray_bg"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -21,16 +21,17 @@
             android:layout_height="?attr/actionBarSize"
             android:background="@color/white"
             app:layout_scrollFlags="scroll|enterAlways"
+            app:logo="@drawable/logo_text"
             app:popupTheme="@android:style/ThemeOverlay.Material.Light"
-            app:title="News App"
-            app:titleTextColor="@color/black" />
+            app:titleTextColor="@android:color/transparent" />
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:elevation="0dp"
-            app:tabIndicatorColor="@color/orange"
+            android:backgroundTint="@color/white"
+            app:tabIndicatorColor="@color/green"
             app:tabSelectedTextColor="@color/black" />
     </com.google.android.material.appbar.AppBarLayout>
 

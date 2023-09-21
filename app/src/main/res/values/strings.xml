@@ -3,5 +3,9 @@
     <string name="content_news">News</string>
     <string name="content_image_news">Image News</string>
     <string name="content_image_news_headline">Image News Headline</string>
-    <string name="txt_separate">|</string>
+    <string name="getting_news">Getting News…</string>
+    <string name="option_search">Search</string>
+    <string name="search_hint">Search your news</string>
+    <string name="news_detail">News Detail</string>
+    <string name="no_news_text">No news about it.</string>
 </resources>

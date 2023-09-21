@@ -4,12 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailActivity">
+    android:background="@color/white"
+    tools:context=".ui.detail.DetailActivity">
 
     <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/app_bar_detail"
+        android:id="@+id/app_bar_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/transparent">
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:layout_width="match_parent"
@@ -23,67 +25,51 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="?attr/actionBarSize"
-                android:layout_marginEnd="16dp"
-                android:layout_marginBottom="16dp">
+                android:layout_marginEnd="16dp">
 
                 <TextView
-                    android:id="@+id/tv_title_detail"
+                    android:id="@+id/detail_title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textAllCaps="false"
-                    android:textColor="@color/black"
-                    android:textSize="18sp"
+                    android:layout_marginTop="8dp"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/tv_date_detail"
+                    android:id="@+id/detail_publishedAt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:textAllCaps="false"
-                    android:textColor="@color/gray_text"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tv_title_detail" />
+                    app:layout_constraintTop_toBottomOf="@id/detail_title" />
 
                 <TextView
-                    android:id="@+id/tv_separate"
+                    android:id="@+id/detail_author"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:text="@string/txt_separate"
-                    android:textAllCaps="false"
-                    android:textColor="@color/gray_text"
-                    app:layout_constraintBaseline_toBaselineOf="@id/tv_date_detail"
-                    app:layout_constraintStart_toEndOf="@id/tv_date_detail" />
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="@id/detail_publishedAt"
+                    app:layout_constraintTop_toBottomOf="@id/detail_publishedAt" />
 
-                <TextView
-                    android:id="@+id/tv_author_detail"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:textAllCaps="false"
-                    android:textColor="@color/gray_text"
-                    app:layout_constraintBaseline_toBaselineOf="@id/tv_date_detail"
-                    app:layout_constraintStart_toEndOf="@id/tv_separate" />
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/cv_headline_detail"
+                <com.google.android.material.card.MaterialCardView
                     android:layout_width="match_parent"
                     android:layout_height="180dp"
                     android:layout_marginTop="16dp"
-                    app:cardCornerRadius="20dp"
-                    app:layout_constraintTop_toBottomOf="@id/tv_date_detail">
+                    app:cardCornerRadius="15dp"
+                    app:layout_constraintTop_toBottomOf="@id/detail_author">
 
                     <ImageView
-                        android:id="@+id/img_news_detail"
+                        android:id="@+id/detail_image"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:contentDescription="@string/content_news"
+                        android:contentDescription="@string/content_image_news"
                         android:scaleType="centerCrop" />
-                </androidx.cardview.widget.CardView>
+                </com.google.android.material.card.MaterialCardView>
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <androidx.appcompat.widget.Toolbar
+            <com.google.android.material.appbar.MaterialToolbar
                 android:id="@+id/toolbar_detail"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
@@ -95,17 +81,20 @@
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:paddingBottom="16dp"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
-        <TextView
-            android:id="@+id/tv_content_detail"
+        <WebView
+            android:id="@+id/wv_detail"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="8dp"
-            android:textSize="18sp" />
+            android:layout_margin="16dp" />
     </androidx.core.widget.NestedScrollView>
+
+    <include
+        android:id="@+id/loading_view"
+        layout="@layout/loading_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_anchorGravity="center" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
