@@ -20,8 +20,8 @@
         android:background="@android:color/transparent">
 
         <com.google.android.material.card.MaterialCardView
-            android:layout_width="150dp"
-            android:layout_height="120dp"
+            android:layout_width="@dimen/_150dp"
+            android:layout_height="@dimen/_120dp"
             app:cardBackgroundColor="@android:color/transparent"
             app:cardCornerRadius="15dp"
             app:layout_constraintStart_toStartOf="parent"

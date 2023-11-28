@@ -11,7 +11,7 @@ interface ApiService {
     fun getCommonMuslimNews(
         @Query("q") q: String = "islam",
         @Query("language") language: String = "en",
-        @Query("pageSize") pageSize: Int = 50,
+        @Query("pageSize") pageSize: Int = 20,
         @Query("sortBy") sortBy: String = "popularity"
     ): Call<NewsResponse>
 

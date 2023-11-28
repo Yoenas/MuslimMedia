@@ -7,13 +7,13 @@ plugins {
 }
 
 android {
-    compileSdkPreview "UpsideDownCake"
+    compileSdk 34
     namespace 'com.idn.muslimmedia'
 
     defaultConfig {
         applicationId "com.idn.muslimmedia"
         minSdk 28
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
@@ -39,9 +39,9 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.core:core-ktx:1.10.1'
+    implementation 'androidx.core:core-ktx:1.12.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'com.google.android.material:material:1.10.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation 'junit:junit:4.13.2'
@@ -50,7 +50,7 @@ dependencies {
 
     // SplashScreen Android 12
     // display SplashScreen in Android 12 - give more experiences launch app to user
-    implementation 'androidx.core:core-splashscreen:1.1.0-alpha01'
+    implementation 'androidx.core:core-splashscreen:1.1.0-alpha02'
 
     // Image Loader
     // image downloader that allow developer break the pain cycle to display images

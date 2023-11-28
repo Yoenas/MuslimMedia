@@ -7,9 +7,9 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.idn.muslimmedia.R
-import com.idn.muslimmedia.ui.detail.DetailActivity
 import com.idn.muslimmedia.data.ArticlesItem
 import com.idn.muslimmedia.databinding.ItemNewsOneBinding
+import com.idn.muslimmedia.ui.detail.DetailActivity
 import com.squareup.picasso.Picasso
 import java.util.Calendar
 import java.util.Locale
@@ -64,6 +64,12 @@ class NewsAdapter : RecyclerView.Adapter<NewsAdapter.MyViewHolder>() {
             tvDate.text = newsDate
             tvTime.text = newsTime
             Picasso.get().load(news.urlToImage)
+                .resize(
+                    this.root.resources.getDimensionPixelSize(R.dimen._150dp),
+                    this.root.resources.getDimensionPixelSize(R.dimen._120dp)
+                )
+                .onlyScaleDown()
+                .centerCrop()
                 .placeholder(R.drawable.ic_logo)
                 .into(imgNews)
         }
