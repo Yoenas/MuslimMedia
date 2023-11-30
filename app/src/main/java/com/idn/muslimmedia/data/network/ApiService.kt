@@ -7,7 +7,7 @@ import retrofit2.http.Query
 
 interface ApiService {
 
-    @GET("/v2/everything")
+    @GET("everything")
     fun getCommonMuslimNews(
         @Query("q") q: String = "islam",
         @Query("language") language: String = "en",
@@ -15,24 +15,24 @@ interface ApiService {
         @Query("sortBy") sortBy: String = "popularity"
     ): Call<NewsResponse>
 
-    @GET("/v2/everything")
+    @GET("everything")
     fun getAlQuranNews(
         @Query("q") q: String = "Al-quran",
         @Query("language") language: String = "en"
     ): Call<NewsResponse>
 
-    @GET("/v2/top-headlines")
+    @GET("top-headlines")
     fun getAlJazeeraNews(
         @Query("sources") sources: String = "al-jazeera-english"
     ): Call<NewsResponse>
 
-    @GET("/v2/everything")
+    @GET("everything")
     fun getWarningForMuslimNews(
         @Query("q") q: String = "anti islam",
         @Query("language") language: String = "en"
     ): Call<NewsResponse>
 
-    @GET("/v2/everything")
+    @GET("everything")
     fun getSearchNews(
         @Query("q") q: String,
         @Query("pageSize") pageSize: Int = 19,
